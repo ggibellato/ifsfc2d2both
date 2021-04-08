@@ -1,6 +1,6 @@
 [submodule "d2cli"]
 	path = d2cli
-	url = git@github.com:ggibellato/ifsfc2d2cli.git
+	url = https://github.com/ggibellato/ifsfc2d2cli.git
 [submodule "d2svr"]
 	path = d2svr
-	url = git@github.com:ggibellato/ifsfc2d2svr.git
+	url = https://github.com/ggibellato/ifsfc2d2svr.git
