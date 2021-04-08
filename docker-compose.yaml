@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  frontend:
+    build: ./d2cli
+    entrypoint: .docker/entrypoint.sh
+    ports:
+      - 3001:3000
+    volumes:
+      - ./d2cli:/home/node/app
+    depends_on:
+      - backend
+
+  backend:
+    build: ./d2svr
+    entrypoint: .docker/entrypoint.sh
+    ports:
+        - 3000:3000
+    volumes:
+        - ./d2svr:/home/node/app
+        
