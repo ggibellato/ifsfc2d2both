@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: d2svr
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: d2svr
+  template:
+    metadata:
+      labels:
+        app: d2svr
+    spec:
+      containers:
+        - name: d2svr
+          image: ggibellato/ifsfc2d2svrprod
+          ports:
+            - containerPort: 3000
