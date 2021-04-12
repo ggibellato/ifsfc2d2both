@@ -16,4 +16,4 @@ spec:
         - name: d2cli
           image: ggibellato/ifsfc2d2cliprod
           ports:
-            - containerPort: 80
+            - containerPort: 3000
