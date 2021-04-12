@@ -6,6 +6,8 @@ git submodule update --init --recursive
 
 isto ira trazer o codigo dos outros 2 projetos
 
+================
+
 Para executar os o servidor e o cliente usando kubernetes e preciso executar:
 
 
@@ -14,6 +16,8 @@ kubectl port-forward service/d2svr-service 3000:3000
 e
 
 kubectl port-forward service/d2cli-service 3001:3000 
+
+==============
 
 lembrando estou usando kind como sugerido no desafio.
 
